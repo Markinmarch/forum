@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    {% block head %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        {% block scripts %}
+            <script type="text/javascript" src = "static/js/index.js" defer></script>
+        {% endblock %}
+        <link rel = "stylesheet" type = "text/css" href = "static/css/index.css">
+        <div class="bg">
+            <a id = "nav_href_home" href = "/" type = "button">главная</a>
+            <a id = "nav_href_items" href = "/thems" type = "button">темы</a>
+            <a id = "nav_href_contact" href = "/contact" type = "button">контакты</a>
+            <a id = "nav_href_about" href = "/about" type = "button">о нас</a>
+        {% endblock %}
+    </div>
+</head>
+<body>
+    {% block content %}{% endblock %}
+</body>
+</html>
