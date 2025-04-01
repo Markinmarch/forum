@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(-45deg, #fa8627, #adad80, #7c79a0, #c21818);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+nav ul li {
+    display: inline-block;
+    }
+  
+nav ul li a {
+    padding: 18px;
+    font-family: "Open Sans";
+    text-transform:uppercase;
+    color: rgba(0, 35, 122, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.1);
+    color: rgba(0, 35, 122, 0.7);
+    border-radius: 45px;
+}
